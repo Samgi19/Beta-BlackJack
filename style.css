@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+:root {
+    --background-color: #007700;
+    --text-color: white;
+    --button-color: #FFD700;
+    --button-hover-color: #FFC300;
+}
+
+body.dark {
+    --background-color: #1c1c1c;
+    --text-color: #f5f5f5;
+    --button-color: #444444;
+    --button-hover-color: #666666;
+}
+
+body.light {
+    --background-color: #f5f5f5;
+    --text-color: #1c1c1c;
+    --button-color: #dddddd;
+    --button-hover-color: #bbbbbb;
+}
+
+button {
+    background-color: var(--button-color);
+    color: var(--text-color);
+    border: none;
+    padding: 1em 2em;
+    margin: 1.25cm 0;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: var(--button-hover-color);
+    transform: scale(1.05);
+}
+
+.main-menu, .play-menu, .settings-menu, .store-menu, .betting-screen, .game-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.slider-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+}
+
+input[type="range"] {
+    width: 60%;
+}
+
+.card {
+    width: 60px;
+    height: 90px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: center;
+    font-size: 24px;
+    margin: 5px;
+    background-color: #ffffff;
+}
+
+.card span.black {
+    color: #000000;
+}
+
+.card span.red {
+    color: #ff0000;
+}
+
+.game-controls button {
+    font-size: 1em;
+    padding: 0.5em 1em;
+    margin: 0.5em;
+}
+
+.alert-box {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #444;
+    color: #fff;
+    padding: 1em 2em;
+    border-radius: 10px;
+    box-shadow: 0
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="betting-screen">
+        <div class="slider-container">
+            <button onclick="betAll()">Ставить все</button>
+            <input type="range" id="bet-slider" min="10" max="1000" value="10" oninput="updateBetAmount()">
+            <button onclick="clearBet()">Очистить ставку</button>
+        </div>
+        <div>
+            <button onclick="navigateTo('game.html')">Сделать ставку</button>
+            <button onclick="navigateTo('index.html')">Назад</button>
+        </div>
+        <p id="bet-amount">Сумма ставки: 10</p>
+        <p id="player-money">Монеты: 1000</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
